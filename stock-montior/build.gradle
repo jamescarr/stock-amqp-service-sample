@@ -1,0 +1,21 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories{
+  mavenCentral();
+  mavenRepo urls: "http://maven.springframework.org/milestone"
+
+}
+
+dependencies{
+  testCompile 'junit:junit:4.7';
+  compile 'org.apache.cxf:cxf-bundle-jaxrs:2.3.1'
+  compile 'org.springframework:spring-core:3.0.5.RELEASE'
+  compile 'cglib:cglib-nodep:2.2'
+
+}
+
+task 'create-dirs' << {
+   sourceSets.all*.java.srcDirs*.each { it.mkdirs() }
+   sourceSets.all*.resources.srcDirs*.each { it.mkdirs() }
+}

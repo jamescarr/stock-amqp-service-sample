@@ -1,0 +1,9 @@
+{
+  "name":"stock-service",
+  "version":"0.0.1",
+  "description":"A simple example stock service that will return random numbers in a range when hit",
+  "dependencies":{
+    "express":"1.0.0"
+  }
+
+}
