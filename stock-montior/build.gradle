@@ -8,7 +8,9 @@ repositories{
 }
 
 dependencies{
-  testCompile 'junit:junit:4.7';
+  testCompile 'junit:junit:4.7'
+  testCompile 'org.mockito:mockito-all:1.8.5'
+
   compile 'org.apache.cxf:cxf-bundle-jaxrs:2.3.1'
   compile 'org.springframework:spring-core:3.0.5.RELEASE'
   compile 'cglib:cglib-nodep:2.2'

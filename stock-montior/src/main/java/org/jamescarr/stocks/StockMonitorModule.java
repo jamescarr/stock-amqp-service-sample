@@ -15,7 +15,7 @@ public class StockMonitorModule {
 	
 	@Bean
 	public StockMonitor monitor(){
-		return new StockMonitor(stockService());
+		return new StockMonitor(stockService(), null);
 	}
 	
 	@Bean
