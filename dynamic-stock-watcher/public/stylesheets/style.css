@@ -1,0 +1,22 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+.routing{
+  float:left;
+  border:1px solid #999;
+  margin:5px;
+  padding:5px;
+}
+.routing div{
+  border: 1px solid #999;
+  margin:2px;
+  padding:2px;
+}
+.up{
+  background: green;
+}
+.down{
+  background:red;
+}

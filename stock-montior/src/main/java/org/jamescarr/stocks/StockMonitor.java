@@ -17,7 +17,7 @@ public class StockMonitor {
 	}
 	
 
-	@Scheduled(fixedRate=1000)
+	@Scheduled(fixedRate=2000)
 	public void poll(){
 		for(String ticker : TICKERS){
 			Float price = stockService.getQuote(ticker);

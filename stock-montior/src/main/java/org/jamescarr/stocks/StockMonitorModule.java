@@ -12,10 +12,12 @@ import org.springframework.scheduling.annotation.ScheduledAnnotationBeanPostProc
 public class StockMonitorModule {
 	@Autowired 
 	private StockNotifier notifier;
+	private final String stockServiceBaseAddress = "http://localhost:8080";
 	
 	@Bean
 	public StockService stockService(){
 		StockServiceClientFactory factory = new StockServiceClientFactory();
+		factory.setBaseAddress(stockServiceBaseAddress);
 		return factory.create();
 	}
 	
