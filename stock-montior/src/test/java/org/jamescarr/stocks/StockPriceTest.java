@@ -11,13 +11,13 @@ public class StockPriceTest {
 	public void shoudlCalculateTheDifferenceInCurrentAndPreviousPrice(){
 		StockPrice stock = new StockPrice("IBM", 21.22f, 20.00f);
 		
-		assertThat(stock.getChange(), equalTo(1.22f));
+		assertThat(stock.getChange(), equalTo(1.22));
 	}
 	
 	@Test
 	public void shoudlCalculateTheDifferenceInCurrentAndPreviousPriceWhenNegative(){
 		StockPrice stock = new StockPrice("IBM", 21.50f, 22.00f);
 		
-		assertThat(stock.getChange(), equalTo(-0.50f));
+		assertThat(stock.getChange(), equalTo(-0.50));
 	}
 }

@@ -8,5 +8,5 @@ import javax.ws.rs.PathParam;
 public interface StockService {
 	@GET
 	@Path("/quote/{ticker}")
-	public Float getQuote(@PathParam("ticker") String ticker);
+	public double getQuote(@PathParam("ticker") String ticker);
 }

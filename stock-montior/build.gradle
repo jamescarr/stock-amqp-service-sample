@@ -17,6 +17,7 @@ dependencies{
   compile 'org.springframework.amqp:spring-amqp:1.0.0.M2'
   compile 'org.springframework.amqp:spring-rabbit:1.0.0.M2'
   compile 'org.springframework.amqp:spring-rabbit-admin:1.0.0.M2'
+  compile 'com.google.collections:google-collections:1.0'
   
   
   runtime 'org.slf4j:jcl-over-slf4j:1.6.1'

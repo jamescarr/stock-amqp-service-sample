@@ -85,18 +85,11 @@ public class StockMonitorTest {
 
 
 
-	private void givenStockServiceRerturnsPrices(String t1, float p1, float p12, String t2, float p2, float p22, String t3,
-			float p3, float p32) {
+	private void givenStockServiceRerturnsPrices(String t1, double p1, double p12, String t2, double p2, double p22, String t3,
+			double p3, double p32) {
 		given(stocks.getQuote(t1)).willReturn(p1).willReturn(p12);
 		given(stocks.getQuote(t2)).willReturn(p2).willReturn(p22);
 		given(stocks.getQuote(t3)).willReturn(p3).willReturn(p32);
 	}
 	
-	class CapturingNotifier implements StockNotifier{
-		
-		public void stockPrice(StockPrice price) {
-			
-		}
-		
-	}
 }
