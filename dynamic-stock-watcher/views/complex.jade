@@ -1,0 +1,30 @@
+script(type='text/javascript', src='/javascripts/demo2.js')
+h1 Complex Criteria
+p In this example we explore binding queues with more complex criteria, for example when a stock price rises or falls a certain percentage. This is done by publishing a message with the criteria to let the specific rules happen in java land and then listen for messages on a special exchange.
+
+fieldset
+  legend Criteria
+  label Ticker
+    input#ticker(type="text", name="ticker")
+  fieldset
+    legend Direction
+    label 
+      input(type="radio", name="direction", value="up")
+      span Rises
+    label 
+      input(type="radio", name="direction", value="down")
+      span Falls
+
+  label 
+    select#criteria(name="criteria")
+      option(value="gt") Greater Than
+      option(value="lt") Less Than
+  label
+    input(type="text", name="percent")
+    span Percent
+  
+  div
+    button#watch Watch
+    
+fieldset#output
+  legend Queues
